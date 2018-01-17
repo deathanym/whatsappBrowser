@@ -1,7 +1,5 @@
 ![](https://image.ibb.co/iSLobm/wsb.png)
 
-`sqlite-web` is a web-based SQLite database browser written in Python.
-
 ### Requisitos:
 
 * [Python3.6](https://www.python.org/downloads/release/python-363/)
