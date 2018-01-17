@@ -1,0 +1,18 @@
+{% extends "base_table.html" %}
+
+{% block inner_content %}
+<h3>Borrar Index</h3>
+<form action="{{ url_for('drop_index', table=table) }}" class="form" method="post">
+  <div class="form-group">
+    <label for="id_name">Nombre Index</label>
+    <select class="form-control" id="id_name" name="name">
+      <option value="">Seleccionar index</option>
+      {% for index in indexes %}
+        <option {% if index.name == name %}selected="selected" {% endif %}value="{{ index.name }}">{{ index.name }}</option>
+      {% endfor %}
+    </select>
+  </div>
+  <button class="btn btn-danger" type="submit">Borrar index</button>
+  <a class="btn btn-default" href="{{ url_for('table_structure', table=table) }}">Cancelar</a>
+</form>
+{% endblock %}
