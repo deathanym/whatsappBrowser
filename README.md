@@ -15,7 +15,7 @@
 
 ```sh
 $ wget https://github.com/deathanym/whatsappBrowser/
-$ git clone clone https://github.com/deathanym/peewee.git
+$ git clone clone https://github.com/coleifer/peewee.git
 $ cd peewee/
 $ python3 setup.py install
 ```
